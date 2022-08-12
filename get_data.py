@@ -10,7 +10,7 @@ import requests
 
 
 
-page = requests.get("https://divar.ir/s/shiraz/real-estate")
+page = requests.get("https://divar.ir/s/shiraz/buy-apartment")
 soup = bs(page.content)
 x=str(soup.find_all(class_='kt-post-card__title'))
 x=x.replace('</h2>',' ').replace('<h2 class="kt-post-card__title">',' ')
